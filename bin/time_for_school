@@ -8,6 +8,7 @@ steve = Student.new
 steve.first_name = "Steve"
 steve.last_name = "Jobs"
 
+
 avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
@@ -18,3 +19,11 @@ some_knowledge = avi.teach
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+jim = User.new
+jim.first_name = "Jim"
+jim.last_name = "Lopez"
+# jim.learn # learn doesnt inh from student undef method learn
+
+ some_knowledge = avi.teach 
+ puts steve.learn(some_knowledge)
